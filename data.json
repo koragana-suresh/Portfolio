@@ -1,0 +1,52 @@
+{
+  "about": {
+    "name": "Suresh Koragana",
+    "role": "Data Engineer",
+    "email": "koraganasuresh@gmail.com",
+    "summary": "Data Engineer with experience in building scalable ETL pipelines using PySpark, SQL, AWS, and Azure. Skilled in optimization, automation, and real-time data processing."
+  },
+
+  "skills": {
+    "programming": ["Python", "C++", "Advanced SQL"],
+    "big_data": ["Apache Spark", "PySpark", "Hadoop", "Kafka", "Delta Lake"],
+    "cloud": ["Azure", "AWS (S3, Glue, Athena, EC2)"],
+    "tools": ["Git", "Airflow", "Autosys", "CI/CD", "Jira"]
+  },
+
+  "experience": [
+    {
+      "role": "Business Technology Solutions Associate",
+      "company": "ZS Associates",
+      "duration": "Jul 2024 - Present",
+      "details": [
+        "Handled 12TB+ data pipelines, improved runtime by 40%",
+        "Built data quality framework reducing manual effort by 30%",
+        "Optimized ETL workflows and improved SLA adherence",
+        "Converted SQL workflows to PySpark (3x faster)"
+      ]
+    },
+    {
+      "role": "Business Technology Solutions Associate Intern",
+      "company": "ZS Associates",
+      "duration": "Jan 2024 - Jun 2024",
+      "details": [
+        "Migrated SQL/Pandas workflows to Spark (85% faster)",
+        "Built ingestion pipelines for structured data",
+        "Reduced manual effort by 70%"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Real-Time Data Engineering Pipeline",
+      "description": "Built Kafka + PySpark + AWS pipeline for real-time stock data processing",
+      "link": "https://github.com/koragana-suresh/Stock_Market_Data_streaming_using_Kafka"
+    }
+  ],
+
+  "socials": {
+    "GitHub": "https://github.com/koragana-suresh",
+    "LinkedIn": "https://www.linkedin.com/in/suresh-koragana-91026622b/"
+  }
+}
