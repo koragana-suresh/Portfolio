@@ -23,45 +23,45 @@
     "tools": ["Git", "Jira", "Autosys", "CI/CD"]
   },
 
-  "experience": [
-    {
-      "role": "Business Technology Solutions Associate",
-      "company": "ZS Associates",
-      "duration": "Jul 2024 - Present",
-      "details": [
-        "Designed and optimized scalable Spark pipelines processing 12TB+ of data, reducing runtime by 40% and enabling dashboards to refresh 6 hours earlier.",
-        "Led end-to-end migration of legacy SQL workflows to distributed PySpark pipelines, improving batch execution time by 3× and enhancing scalability.",
-        "Built a reusable data quality and anomaly detection framework, reducing manual validation efforts by 30% and improving reliability of analytics outputs.",
-        "Collaborated with cross-functional stakeholders to translate business requirements into efficient data models and ETL workflows aligned with analytics needs.",
-        "Engineered robust ingestion and transformation pipelines supporting 100+ datasets, enabling downstream analytics for a Fortune 500 client.",
-        "Implemented RapidFuzz-based fuzzy matching on insurance identifiers, resolving inconsistencies in complex datasets and improving entity resolution by 26% to support key business decisions."
-      ]
-    },
-    {
-      "role": "Business Technology Solutions Associate Intern",
-      "company": "ZS Associates",
-      "duration": "Jan 2024 - Jun 2024",
-      "details": [
-        "Migrated legacy SQL and Pandas workflows to PySpark, reducing processing time by 85% through distributed execution.",
-        "Developed scalable ingestion frameworks to process raw CSV data into structured, partitioned datasets using PySpark.",
-        "Owned end-to-end pipeline development from ingestion to validation and delivery, reducing manual effort by 70%.",
-        "Automated and streamlined ETL workflows using Autosys, eliminating 90% of manual interventions and improving SLA adherence."
-      ]
-    }
-  ],
+ "experience": [
+  {
+    "role": "Business Technology Solutions Associate",
+    "company": "ZS Associates",
+    "duration": "Jul 2024 - Present",
+    "details": [
+      "Built and fine-tuned large-scale Spark pipelines handling high-volume datasets, significantly improving processing efficiency and enabling faster data availability for downstream analytics.",
+      "Modernized legacy SQL-based workflows by transitioning them to distributed PySpark architectures, resulting in improved scalability and reduced execution time.",
+      "Developed a flexible data quality and anomaly detection system that minimized manual validation and strengthened trust in analytics outputs.",
+      "Worked closely with cross-functional teams to convert business requirements into scalable data models and production-ready ETL workflows.",
+      "Created resilient ingestion and transformation pipelines capable of handling diverse datasets at scale, supporting critical analytics use cases.",
+      "Applied fuzzy matching techniques using RapidFuzz to address inconsistencies in complex datasets, improving entity mapping accuracy and uncovering valuable business relationships."
+    ]
+  },
+  {
+    "role": "Business Technology Solutions Associate Intern",
+    "company": "ZS Associates",
+    "duration": "Jan 2024 - Jun 2024",
+    "details": [
+      "Re-architected existing SQL and Pandas workflows into Spark-based pipelines, achieving substantial improvements in processing performance.",
+      "Designed ingestion frameworks to transform raw data into structured and query-optimized datasets for downstream consumption.",
+      "Took ownership of complete pipeline workflows, from ingestion through validation and delivery, reducing reliance on manual processes.",
+      "Automated scheduling and orchestration of ETL pipelines using Autosys, improving operational efficiency and SLA compliance."
+    ]
+  }
+],
 
   "projects": [
-    {
-      "name": "Cloud-Native Real-Time Data Engineering Pipeline",
-      "description": "Built a fully automated real-time data pipeline using Kafka, PySpark, and AWS to process streaming stock market data.",
-      "highlights": [
-        "Implemented Kafka-based streaming to capture real-time stock tick data at scale.",
-        "Enabled fault-tolerant ingestion with checkpointing, partitioning, and scalable storage on S3.",
-        "Designed extensible architecture supporting both batch and streaming (Lakehouse model)."
-      ],
-      "link": "https://github.com/koragana-suresh/Stock_Market_Data_streaming_using_Kafka"
-    }
-  ],
+  {
+    "name": "Cloud-Native Real-Time Data Engineering Pipeline",
+    "description": "Designed and developed a scalable real-time data pipeline leveraging Kafka, PySpark, and AWS to process high-frequency stock market data streams.",
+    "highlights": [
+      "Implemented event-driven data ingestion using Kafka to capture and process streaming data in near real-time.",
+      "Built a fault-tolerant data pipeline with checkpointing and partitioning strategies to ensure reliability and scalability.",
+      "Architected the system to support both real-time and batch processing patterns, aligning with modern Lakehouse design principles."
+    ],
+    "link": "https://github.com/koragana-suresh/Stock_Market_Data_streaming_using_Kafka"
+  }
+],
 
   "socials": {
     "GitHub": "https://github.com/koragana-suresh",
