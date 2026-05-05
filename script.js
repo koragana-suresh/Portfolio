@@ -1,80 +1,88 @@
-// Load main data
 fetch('data.json')
 .then(res => res.json())
 .then(data => {
 
-    // Header
-    document.getElementById('name').innerText = data.about.name;
-    document.getElementById('role').innerText = data.about.role;
+  // Header
+  document.getElementById("name").innerText = data.about.name;
+  document.getElementById("role").innerText = data.about.role;
+  document.getElementById("summary").innerText = data.about.summary;
 
-    const emailEl = document.getElementById('email');
-    emailEl.href = `mailto:${data.about.email}`;
-    emailEl.innerText = data.about.email;
+  const email = document.getElementById("email");
+  email.href = `mailto:${data.about.email}`;
+  email.innerText = data.about.email;
 
-    // ===== SKILLS =====
-    const skillsContainer = document.getElementById('skills-list');
+  // Skills
+  const skillsDiv = document.getElementById("skills-list");
 
-    for (const [category, skills] of Object.entries(data.skills)) {
-        const div = document.createElement('div');
+  Object.values(data.skills).flat().forEach(skill => {
+    const span = document.createElement("span");
+    span.textContent = skill;
+    skillsDiv.appendChild(span);
+  });
 
-        div.innerHTML = `
-            <h3>${category.replace("_", " ").toUpperCase()}</h3>
-            <ul>
-                ${skills.map(s => `<li>${s}</li>`).join("")}
-            </ul>
-        `;
+  // Experience
+  const expDiv = document.getElementById("experience-list");
 
-        skillsContainer.appendChild(div);
-    }
+  data.experience.forEach(exp => {
+    const div = document.createElement("div");
+    div.classList.add("card");
 
-    // ===== EXPERIENCE =====
-    const expContainer = document.getElementById('experience-list');
+    div.innerHTML = `
+      <h3>${exp.role} - ${exp.company}</h3>
+      <p>${exp.duration}</p>
+      <ul>
+        ${exp.details.map(d => `<li>${d}</li>`).join("")}
+      </ul>
+    `;
 
-    data.experience.forEach(exp => {
-        const div = document.createElement('div');
-        div.classList.add('card');
+    expDiv.appendChild(div);
+  });
 
-        div.innerHTML = `
-            <h3>${exp.role} - ${exp.company}</h3>
-            <p>${exp.duration}</p>
-            <ul>
-                ${exp.details.map(d => `<li>${d}</li>`).join("")}
-            </ul>
-        `;
+  // Projects
+  const projDiv = document.getElementById("projects-list");
 
-        expContainer.appendChild(div);
-    });
+  data.projects.forEach(p => {
+    const div = document.createElement("div");
+    div.classList.add("project-card");
 
-    // ===== SOCIALS =====
-    const socialContainer = document.getElementById('socials-list');
+    div.innerHTML = `
+      <h3>${p.name}</h3>
+      <p>${p.description}</p>
+      <ul>
+        ${p.highlights.map(h => `<li>${h}</li>`).join("")}
+      </ul>
+      <a href="${p.link}" target="_blank">View Project →</a>
+    `;
 
-    for (const [platform, link] of Object.entries(data.socials)) {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${link}" target="_blank">${platform}</a>`;
-        socialContainer.appendChild(li);
-    }
+    projDiv.appendChild(div);
+  });
 
-});
+  // Education
+  const eduDiv = document.getElementById("education-list");
 
+  data.education.forEach(e => {
+    const div = document.createElement("div");
+    div.classList.add("card");
 
-// ===== GITHUB PROJECTS =====
-const GITHUB_USERNAME = "koragana-suresh";
+    div.innerHTML = `
+      <h3>${e.degree}</h3>
+      <p>${e.institute}</p>
+      <p>${e.year}</p>
+      <p>${e.grade}</p>
+    `;
 
-fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
-.then(res => res.json())
-.then(repos => {
-    const container = document.getElementById('projects-list');
+    eduDiv.appendChild(div);
+  });
 
-    repos
-    .filter(r => !r.fork)
-    .slice(0,5)
-    .forEach(repo => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-            <strong>${repo.name}</strong><br>
-            ${repo.description || ""}
-            <br><a href="${repo.html_url}" target="_blank">View</a>
-        `;
-        container.appendChild(li);
-    });
+  // Socials
+  const socialDiv = document.getElementById("socials-list");
+
+  for (const [k, v] of Object.entries(data.socials)) {
+    const a = document.createElement("a");
+    a.href = v;
+    a.target = "_blank";
+    a.innerText = k + " ";
+    socialDiv.appendChild(a);
+  }
+
 });
