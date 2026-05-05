@@ -3,14 +3,24 @@
     "name": "Suresh Koragana",
     "role": "Data Engineer",
     "email": "koraganasuresh@gmail.com",
-    "summary": "Data Engineer with experience in building scalable ETL pipelines using PySpark, SQL, AWS, and Azure. Skilled in optimization, automation, and real-time data processing."
+    "summary": "Data Engineer specializing in building and optimizing scalable PySpark-based data pipelines. Experienced in improving data quality, resolving complex data inconsistencies, and delivering reliable data solutions across AWS and Azure environments. Strong focus on performance, scalability, and enabling data-driven decision making."
   },
+
+  "education": [
+    {
+      "degree": "B.Tech in Electronics and Communication Engineering",
+      "institute": "National Institute of Technology, Raipur",
+      "year": "2020 - 2024",
+      "grade": "CPI: 8.63 (First Class with Distinction)"
+    }
+  ],
 
   "skills": {
     "programming": ["Python", "C++", "Advanced SQL"],
-    "big_data": ["Apache Spark", "PySpark", "Hadoop", "Kafka", "Delta Lake"],
-    "cloud": ["Azure", "AWS (S3, Glue, Athena, EC2)"],
-    "tools": ["Git", "Airflow", "Autosys", "CI/CD", "Jira"]
+    "big_data": ["Apache Spark", "PySpark", "Hadoop (HDFS, Hive)", "Kafka", "Delta Lake"],
+    "cloud": ["Azure (ADF, DevOps)", "AWS (S3, Glue, Athena, EC2)", "Snowflake"],
+    "data_engineering": ["ETL Pipelines", "Data Modeling", "Lakehouse", "CDC", "Optimization"],
+    "tools": ["Git", "Jira", "Autosys", "CI/CD"]
   },
 
   "experience": [
@@ -19,10 +29,12 @@
       "company": "ZS Associates",
       "duration": "Jul 2024 - Present",
       "details": [
-        "Handled 12TB+ data pipelines, improved runtime by 40%",
-        "Built data quality framework reducing manual effort by 30%",
-        "Optimized ETL workflows and improved SLA adherence",
-        "Converted SQL workflows to PySpark (3x faster)"
+        "Designed and optimized scalable Spark pipelines processing 12TB+ of data, reducing runtime by 40% and enabling dashboards to refresh 6 hours earlier.",
+        "Led end-to-end migration of legacy SQL workflows to distributed PySpark pipelines, improving batch execution time by 3× and enhancing scalability.",
+        "Built a reusable data quality and anomaly detection framework, reducing manual validation efforts by 30% and improving reliability of analytics outputs.",
+        "Collaborated with cross-functional stakeholders to translate business requirements into efficient data models and ETL workflows aligned with analytics needs.",
+        "Engineered robust ingestion and transformation pipelines supporting 100+ datasets, enabling downstream analytics for a Fortune 500 client.",
+        "Implemented RapidFuzz-based fuzzy matching on insurance identifiers, resolving inconsistencies in complex datasets and improving entity resolution by 26% to support key business decisions."
       ]
     },
     {
@@ -30,17 +42,23 @@
       "company": "ZS Associates",
       "duration": "Jan 2024 - Jun 2024",
       "details": [
-        "Migrated SQL/Pandas workflows to Spark (85% faster)",
-        "Built ingestion pipelines for structured data",
-        "Reduced manual effort by 70%"
+        "Migrated legacy SQL and Pandas workflows to PySpark, reducing processing time by 85% through distributed execution.",
+        "Developed scalable ingestion frameworks to process raw CSV data into structured, partitioned datasets using PySpark.",
+        "Owned end-to-end pipeline development from ingestion to validation and delivery, reducing manual effort by 70%.",
+        "Automated and streamlined ETL workflows using Autosys, eliminating 90% of manual interventions and improving SLA adherence."
       ]
     }
   ],
 
   "projects": [
     {
-      "name": "Real-Time Data Engineering Pipeline",
-      "description": "Built Kafka + PySpark + AWS pipeline for real-time stock data processing",
+      "name": "Cloud-Native Real-Time Data Engineering Pipeline",
+      "description": "Built a fully automated real-time data pipeline using Kafka, PySpark, and AWS to process streaming stock market data.",
+      "highlights": [
+        "Implemented Kafka-based streaming to capture real-time stock tick data at scale.",
+        "Enabled fault-tolerant ingestion with checkpointing, partitioning, and scalable storage on S3.",
+        "Designed extensible architecture supporting both batch and streaming (Lakehouse model)."
+      ],
       "link": "https://github.com/koragana-suresh/Stock_Market_Data_streaming_using_Kafka"
     }
   ],
