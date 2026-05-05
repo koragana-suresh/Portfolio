@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Suresh Koragana</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suresh Koragana</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<nav>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#socials">Contact</a>
-</nav>
-
-<header>
-    <h1 id="name"></h1>
-    <p id="role"></p>
-    <p>Reach out: <a id="email"></a></p>
+<header class="hero">
+  <h1 id="name"></h1>
+  <p id="role"></p>
+  <p><a id="email"></a></p>
 </header>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div id="skills-list"></div>
+<section class="section">
+  <h2>About</h2>
+  <p id="summary"></p>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <div id="education-list"></div>
+<section class="section">
+  <h2>Skills</h2>
+  <div id="skills-list" class="skills-grid"></div>
 </section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <div id="experience-list"></div>
+<section class="section">
+  <h2>Experience</h2>
+  <div id="experience-list" class="timeline"></div>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul id="projects-list"></ul>
+<section class="section">
+  <h2>Projects</h2>
+  <div id="projects-list" class="project-grid"></div>
 </section>
 
-<section id="socials">
-    <h2>Connect</h2>
-    <ul id="socials-list"></ul>
+<section class="section">
+  <h2>Education</h2>
+  <div id="education-list"></div>
+</section>
+
+<section class="section">
+  <h2>Connect</h2>
+  <div id="socials-list"></div>
 </section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
